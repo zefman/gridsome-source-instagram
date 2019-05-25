@@ -9,8 +9,10 @@
     "instagram",
     "vue"
   ],
-  "author": "Jozef Maxted",
+  "author": "Jozef Maxted <hello@jozefmaxted.co.uk>",
   "license": "MIT",
+  "homepage": "https://github.com/zefman/gridsome-source-instagram",
+  "repository": "https://github.com/zefman/gridsome-source-instagram",
   "dependencies": {
     "axios": "^0.18.0",
     "cheerio": "^1.0.0-rc.3"
