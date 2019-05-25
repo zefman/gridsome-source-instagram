@@ -1,0 +1,21 @@
+{
+  "name": "@zefman/gridsome-source-instagram",
+  "version": "0.1.0",
+  "description": "Gridsome source plugin to load data from Instagram",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gridsome",
+    "gridsome-plugin",
+    "instagram",
+    "vue"
+  ],
+  "author": "Jozef Maxted",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "0.18.0",
+    "cheerio": "^1.0.0-rc.3"
+  }
+}
