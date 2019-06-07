@@ -20,7 +20,7 @@ export default {
     {
       use: '@zefman/gridsome-source-instagram',
       options: {
-        username: 'zefman' // Instagram username
+        username: 'zefman', // Instagram username
         typeName: 'InstagramPhoto' // The GraphQL type you want the photos to be added under. Defaults to InstagramPhoto
       }
     }
