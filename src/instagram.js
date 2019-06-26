@@ -12,7 +12,7 @@ const INSTAGRAM_URL = 'https://www.instagram.com/';
 function parseInstragramProfileHtml(html) {
   const $ = cheerio.load(html);
   const jsonData = $('html > body > script')
-    .get(0)
+    .get(1)
     .children[0].data.replace(/window\._sharedData\s?=\s?{/, '{')
     .replace(/;$/g, '');
   return JSON.parse(jsonData).entry_data.ProfilePage[0];
