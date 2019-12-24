@@ -5,8 +5,8 @@ module.exports = function (api, options) {
   if (!options.username) {
     throw new Error('Missing Instagram username');
   }
-  api.loadSource(async ({ addContentType }) => {
-    const contentType = addContentType({
+  api.loadSource(async ({ addCollection }) => {
+    const contentType = addCollection({
       typeName: options.typeName
     });
 
