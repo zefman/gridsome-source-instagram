@@ -1,6 +1,6 @@
 {
   "name": "@zefman/gridsome-source-instagram",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Gridsome source plugin to load data from Instagram",
   "main": "index.js",
   "keywords": [
