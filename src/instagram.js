@@ -11,12 +11,15 @@ const INSTAGRAM_URL = 'https://www.instagram.com/';
  */
 function parseInstragramProfileHtml(html) {
   const $ = cheerio.load(html);
-  console.log($('html > body > script'));
-  console.log($('html > body > script').get(0));
+  // console.log($('html > body > script'));
+  // console.log($('html > body > script').get(0));
   const jsonData = $('html > body > script')
     .get(0)
     .children[0].data.replace(/window\._sharedData\s?=\s?{/, '{')
     .replace(/;$/g, '');
+
+    console.log(JSON.parse(jsonData));
+
   return JSON.parse(jsonData).entry_data.ProfilePage[0];
 }
 
