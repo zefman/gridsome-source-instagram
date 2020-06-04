@@ -10,7 +10,7 @@ const INSTAGRAM_URL = 'https://www.instagram.com/';
  * @param {string} password The instagram password
  */
 async function getInstagramPhotos(username, password) {
-  const browser = await puppeteer.launch({ headless: false });
+  const browser = await puppeteer.launch({ headless: true });
   const page = await browser.newPage();
   await page.goto('https://www.instagram.com/');
   await page.waitForSelector('input[name="username"]');
