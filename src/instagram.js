@@ -12,6 +12,7 @@ async function getInstagramPhotos(username) {
     .get(`https://www.instagram.com/${username}/?__a=1`)
     .then(response => {
       const photos = []
+      console.log(response.data);
       response.data.graphql.user.edge_owner_to_timeline_media.edges.forEach(
         edge => {
           if (edge.node) {
